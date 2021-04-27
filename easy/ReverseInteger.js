@@ -7,21 +7,22 @@
  * @param {number} x
  * @return {number}
  */
- var reverse = function(x) {
-    
-    let numToString = x.toString()
-    
-    let isNegative = (numToString[0] === '-')
-      if(isNegative){
-          let result = numToString.split("").reverse()
-          result.pop()
-          
-         if(Number(result.join('')) > Math.pow(2, 31)) return 0
-          result.unshift('-')
-          return (Number(result.join("")) > Math.pow(2, 31)) ? 0 : Number(result.join(""))
-      }
-      
-      
-     return Number(x.toString().split("").reverse().join("")) > Math.pow(2, 31) ? 0 : Number(x.toString().split("").reverse().join(""))
-      
-  };
+var reverse = function (x) {
+  let numToString = x.toString();
+
+  let isNegative = numToString[0] === "-";
+  if (isNegative) {
+    let result = numToString.split("").reverse();
+    result.pop();
+
+    if (Number(result.join("")) > Math.pow(2, 31)) return 0;
+    result.unshift("-");
+    return Number(result.join("")) > Math.pow(2, 31)
+      ? 0
+      : Number(result.join(""));
+  }
+
+  return Number(x.toString().split("").reverse().join("")) > Math.pow(2, 31)
+    ? 0
+    : Number(x.toString().split("").reverse().join(""));
+};
