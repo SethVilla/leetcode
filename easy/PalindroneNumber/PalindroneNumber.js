@@ -7,7 +7,7 @@
  * @param {number} x
  * @return {boolean}
  */
- var isPalindrome = function(x) {
+ const isPalindrome = (x) => {
     if(x.toString()[0] === '-') {
         return false
     }
