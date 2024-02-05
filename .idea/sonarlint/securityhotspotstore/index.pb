@@ -12,3 +12,5 @@ N
 java/35-Search-Insert-Position,b/6/b6834fcb652f8c77b07523a8de0e4197cadf68b2
 X
 (java/35-Search-Insert-Position/Main.java,c/1/c1003032606db0ebed9f6ebb0d8e65717820992d
+M
+java/75-sort-colors/Main.java,3/e/3ef5559ff764b7a29326033ffa04166bf7946a9b
